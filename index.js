@@ -26,6 +26,13 @@ client.on("message", function (message) {
       message.reply("Auto Bot is meant to automate a lot of repetative tasks. Note: This bot is currently under development, hence, some extra steps (https://github.com/ayushmxn/auto-bot/blob/master/.github/DOCUMENTATION.md#setup) are required for you to add it to your server.");
       return;
     }
+    if (msg[1] === "avatar") {
+      if (msg[2] === "--update") {
+        client.user.setAvatar(msg[3])
+          .then(user => message.reply("Avatar changed!"))
+          .catch(console.error);
+      }
+    }
     else {
       message.reply("It seems you may have given an invalid command. Refer to the examples in the usage section (https://github.com/ayushmxn/auto-bot/blob/master/.github/DOCUMENTATION.md#usage).");
       return;
