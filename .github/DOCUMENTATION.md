@@ -27,9 +27,10 @@ Rename ```.env-sample``` to ```.env``` in the project directory and add your uni
 
 ## API Usage
 
-Commands are of the format ```prefix command(s) argument(s)```.    
+Commands are of the format ```prefix command(s) --optional-subcommand argument(s)```.    
 
-Command | Arguments | Description
+Command | Option(s) | Argument(s) | Description
 ------- | --------- | --------
-help | | Gives a summary of commands used with their description, similar to this table.
-about | | A description of the Auto Bot.
+help | | | Gives a summary of commands used with their description, similar to this table.
+about | | | A description of the Auto Bot.
+avatar | --update | image-hyperlink | Update Avatar image
